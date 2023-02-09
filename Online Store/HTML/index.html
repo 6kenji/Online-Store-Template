@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- My JS -->
+  <script src="../JS/files.js"></script>
+  <script src="../JS/all_scripts.js" async></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/estilos.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
+  <title> Khay Safar Sales </title>
+</head>
+
+<body>
+  <div class="root_page">
+    <ul>
+      <li><a href="">Khay Safar Sales</a></li>
+    </ul>
+    <br> <br>
+    <h1>Seja Bem Vindo a melhor loja virtual de calçdos do País. Aqui temos de Tudo!!!</h1>
+    <br> <br>
+    <div class="insider">
+      <p class="space"></p>
+      <div class="content-body">
+        <section>
+          
+          <br>
+            <div class="swiper mySwiper containerP">
+              <div class="swiper-wrapper content">
+
+                <div class="swiper-slide card">
+                  <div class="card-content">
+
+                    <div class="image">
+                      <img id="imagesadidas" src="../IMG/ADIDAS/pic1.jpg" alt="">
+                    </div>
+
+                    <div class="product-name">
+                      <span class="nameadidas">ADIDAS YEEZY BOOST 350 V2 BLACK</span>
+                      <span class="priceadidas"> 3700 MTS</span>
+                      <span class="description"> 
+                        Você nunca pode ter muito calor, então pegue o adidas Yeezy Boost 350 V2 Black. Este Yeezy Boost 350 V2 vem com uma parte superior preta, entressola preta e uma sola preta.
+                        Compre agora em Khay Safar Sales
+                      </span>
+                    </div>
+
+                    <div class="button-area">
+                      <button id="add" class="buy" type="button" onclick="addProduct('adidas')">ADICIONAR</button>
+                      <input type="number" id="qtdadidas" class="input_number" max="10" min="1">
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="swiper-slide card">
+                  <div class="card-content">
+
+                    <div class="image">
+                      <img id="imagesnike" src="../IMG/NIKES/pic1.jpg" alt="">
+                    </div>
+
+                    <div class="product-name">
+                      <span class="namenike">NIKE AIR FORCE 1 WHITE </span>
+                      <span class="pricenike"> 75000 MTS</span>
+                      <span class="description"> 
+                        Explore e compre o Nike Air Force 1 Low 'Triple White'. Fique um passo à frente dos últimos lançamentos e lançamentos de tênis.
+                      </span>
+                    </div>
+
+                    <div class="button-area">
+                      <button id="add" class="buy" onclick="addProduct('nike')">ADICIONAR</button>
+                      <input type="number" id="qtdnike" class="input_number" max="10" min="1">
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="swiper-slide card">
+                  <div class="card-content">
+
+                    <div class="image">
+                      <img id="imagespuma" src="../IMG/PUMA/pic1.jpg" alt="">
+                    </div>
+
+                    <div class="product-name">
+                      <span class="namepuma">PUMA SOFT FOAM</span>
+                      <span class="pricepuma"> 5000 MTS</span>
+                      <span class="description"> 
+                        O estilo moderno encontra a moda streetwear no tênis INTERFLEX Modern. Estes corredores apresentam um design contemporâneo arrojado com uma língua exagerada e entressola de espuma EVA contrastante...
+                      </span>
+                    </div>
+
+                    <div class="button-area">
+                      <button id="add" class="button" type="button" onclick="addProduct('puma')">ADICIONAR</button>
+                      <input type="number" id="qtdpuma" class="input_number" max="10" min="1">
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="swiper-slide card">
+                  <div class="card-content">
+
+                    <div class="image">
+                      <img id="imagesgucci" src="../IMG/GUCCI/pic1.jpg" alt="">
+                    </div>
+
+                    <div class="product-name">
+                      <span class="namegucci">GUCCI FOR KIDS</span>
+                      <span class="pricegucci"> 28000 MTS</span>
+                      <span class="description"> 
+                        Apresentado aqui com um acabamento em couro verde e o House Web em verde e vermelho, uma reinterpretação do tênis Ace que imbui as qualidades eternas do estilo.
+                      </span>
+                    </div>
+
+                    <div class="button-area">
+                      <button class="buy" onclick=" addProduct('gucci')">ADICIONAR</button>
+                      <input type="number" id="qtdgucci" class="input_number" max="10" min="1">
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>     
+
+        </section>
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
+        </script>
+
+      </div>
+      <ul class="rcorners3 ">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <section class="container content-section">
+            <h2 class="section-header">Carrinho de Compras</h2>
+            <br>  
+          </div>
+
+        
+            <form action="../JSP/yourdeliverystatus.jsp" method="POST">
+              
+                <div class= "carrinho_mine" id="carrinho">
+                  <br> 
+                </div>
+                <br>
+                <div class="total-cenas">
+                  <div class="total-title">TOTAL: </div>
+                  <div class="total-price" id="total-products"></div>
+                </div>
+                <br>
+                <button class="button button-primary button-buy" type="submit">COMPRAR</button>
+                <br><br>
+                <h3>Compre suas sapatilhas favoritas conosco. Volte sempre!</h3>
+            </form>
+          </section>
+      </ul>
+    </div>
+  </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  
+  <footer>
+    <div class="footer1">
+      <div class="product">
+        <div class="heading">Produtos</div>
+        <div class="div">Sapatilhas da Nike, Puma, Adidas e Gucci</div>
+      </div>
+      <div class="services">
+        <div class="heading">Servicos</div>
+        <div class="div">Venda de Calcados</div>
+        <div class="div">Mais Servicos a caminho</div>
+      </div>
+    </div>
+    <div class="footer2">Copyright © <h4>Khay Safar Sales</h4> 2022</div>
+  </footer>
+</body>
+
+</html>
